@@ -1,0 +1,24 @@
+<h1>Mis Presupuestos</h1>
+
+<a href="{% url 'crear_presupuesto' %}">➕ Nuevo Presupuesto</a>
+
+<table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <th>Nombre</th>
+        <th>Fecha de creación</th>
+        <th>Total (estimado)</th>
+    </tr>
+    {% for presupuesto in presupuestos %}
+        <tr>
+            <td>{{ presupuesto.nombre }}</td>
+            <td>{{ presupuesto.fecha_creacion|date:"d/m/Y H:i" }}</td>
+            <td>
+                ${{ presupuesto.items.all|map:"valor_total"|sum|floatformat:2 }}
+            </td>
+        </tr>
+    {% empty %}
+        <tr>
+            <td colspan="3">No hay presupuestos aún.</td>
+        </tr>
+    {% endfor %}
+</table>
