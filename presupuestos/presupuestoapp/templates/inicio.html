@@ -2,24 +2,242 @@
 {% block title %}Bienvenido a PresupuestosApp{% endblock %}
 
 {% block content %}
-<div class="text-center">
-  <h1 class="display-4 mb-4">Bienvenido a PresupuestosApp</h1>
-  <p class="lead">Automatiza la gestión de presupuestos de tu empresa de forma fácil y profesional.</p>
 
-  <div class="row mt-5">
-    <div class="col-md-4">
-      <h5>💼 Gestión de Usuarios</h5>
-      <p>Permite a tu equipo colaborar de forma organizada según su rol.</p>
-    </div>
-    <div class="col-md-4">
-      <h5>📊 Informes Inteligentes</h5>
-      <p>Accede a reportes precisos y en tiempo real para contabilidad.</p>
-    </div>
-    <div class="col-md-4">
-      <h5>⏱ Ahorro de Tiempo</h5>
-      <p>Optimiza los procesos de cotización y seguimiento presupuestario.</p>
-    </div>
+ <!-- Hero Section -->
+ <section class="hero-section">
+  <div class="container hero-content text-center">
+      <h1 class="display-4 fw-bold mb-4">Construyendo Tus Sueños con Calidad</h1>
+      <p class="lead mb-4">Especialistas en construcción residencial, comercial e infraestructura. Comprometidos con la excelencia y puntualidad.</p>
+      <a href="#contacto" class="btn btn-warning btn-lg px-4 me-2">Solicitar Presupuesto</a>
+      <a href="#proyectos" class="btn btn-warning btn-lg px-4 me-2">Ver Proyectos</a>
   </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="py-5 bg-light">
+  <div class="container">
+      <div class="text-center mb-5">
+          <h2 class="fw-bold">Nuestros Servicios</h2>
+          <p class="text-muted">Soluciones integrales para todo tipo de proyectos</p>
+      </div>
+      <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+              <div class="card service-card h-100">
+                  <div class="card-body text-center p-4">
+                      <i class="fas fa-home fa-3x text-warning mb-3"></i>
+                      <h5 class="card-title">Construcción Residencial</h5>
+                      <p class="card-text">Viviendas, edificios y remodelaciones con diseños personalizados.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class="card service-card h-100">
+                  <div class="card-body text-center p-4">
+                      <i class="fas fa-building fa-3x text-warning mb-3"></i>
+                      <h5 class="card-title">Obras Comerciales</h5>
+                      <p class="card-text">Locales, oficinas y naves industriales adaptadas a tus necesidades.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class="card service-card h-100">
+                  <div class="card-body text-center p-4">
+                      <i class="fas fa-road fa-3x text-warning mb-3"></i>
+                      <h5 class="card-title">Infraestructura</h5>
+                      <p class="card-text">Carreteras, puentes y obras públicas con altos estándares de calidad.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class="card service-card h-100">
+                  <div class="card-body text-center p-4">
+                      <i class="fas fa-clipboard-check fa-3x text-warning mb-3"></i>
+                      <h5 class="card-title">Gestión de Proyectos</h5>
+                      <p class="card-text">Asesoría y ejecución llave en mano para garantizar éxito en tu obra.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Por Qué Elegirnos -->
+<section class="py-5">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+              <img src="https://via.placeholder.com/600x400" alt="Equipo de construcción" class="img-fluid rounded">
+          </div>
+          <div class="col-lg-6">
+              <h2 class="fw-bold mb-4">¿Por Qué Elegirnos?</h2>
+              <div class="d-flex mb-3">
+                  <div class="me-4 text-warning">
+                      <i class="fas fa-award fa-2x"></i>
+                  </div>
+                  <div>
+                      <h5>+15 Años de Experiencia</h5>
+                      <p class="text-muted">Profesionales certificados en el sector de la construcción.</p>
+                  </div>
+              </div>
+              <div class="d-flex mb-3">
+                  <div class="me-4 text-warning">
+                      <i class="fas fa-clock fa-2x"></i>
+                  </div>
+                  <div>
+                      <h5>Cumplimiento de Plazos</h5>
+                      <p class="text-muted">Entregamos tus proyectos en el tiempo acordado.</p>
+                  </div>
+              </div>
+              <div class="d-flex mb-3">
+                  <div class="me-4 text-warning">
+                      <i class="fas fa-shield-alt fa-2x"></i>
+                  </div>
+                  <div>
+                      <h5>Garantía en Obras</h5>
+                      <p class="text-muted">Respaldamos la calidad de nuestros trabajos.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Proyectos Destacados -->
+<section id="proyectos" class="py-5 bg-light">
+  <div class="container">
+      <div class="text-center mb-5">
+          <h2 class="fw-bold">Proyectos Destacados</h2>
+          <p class="text-muted">Algunos de nuestros trabajos recientes</p>
+      </div>
+      <div class="row g-4">
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Proyecto 1">
+                  <div class="card-body">
+                      <h5 class="card-title">Edificio Residencial "Las Palmas"</h5>
+                      <p class="card-text">24 apartamentos entregados en 2023.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Proyecto 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Centro Comercial "Plaza Central"</h5>
+                      <p class="card-text">15,000 m² construidos en 18 meses.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Proyecto 3">
+                  <div class="card-body">
+                      <h5 class="card-title">Remodelación Hotel "Gran Vista"</h5>
+                      <p class="card-text">Renovación completa en tiempo récord.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="text-center mt-4">
+          <a href="#" class="btn btn-outline-dark">Ver Portafolio Completo</a>
+      </div>
+  </div>
+</section>
+
+<!-- Testimonios -->
+<section class="py-5">
+  <div class="container">
+      <div class="text-center mb-5">
+          <h2 class="fw-bold">Clientes Satisfechos</h2>
+          <p class="text-muted">Lo que dicen nuestros clientes</p>
+      </div>
+      <div class="row g-4">
+          <div class="col-md-4">
+              <div class="card h-100 testimonial-card">
+                  <div class="card-body p-4">
+                      <p class="fst-italic mb-4">"Excelente trabajo en nuestra sede corporativa. Cumplieron con todos los plazos y el presupuesto."</p>
+                      <div class="d-flex align-items-center">
+                          <img src="https://via.placeholder.com/50" alt="Cliente" class="rounded-circle me-3">
+                          <div>
+                              <h6 class="mb-0">Juan Pérez</h6>
+                              <small class="text-muted">CEO, Empresa ABC</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card h-100 testimonial-card">
+                  <div class="card-body p-4">
+                      <p class="fst-italic mb-4">"La casa de nuestros sueños fue construida con atención a cada detalle. ¡Altamente recomendados!"</p>
+                      <div class="d-flex align-items-center">
+                          <img src="https://via.placeholder.com/50" alt="Cliente" class="rounded-circle me-3">
+                          <div>
+                              <h6 class="mb-0">María Gómez</h6>
+                              <small class="text-muted">Propietaria</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card h-100 testimonial-card">
+                  <div class="card-body p-4">
+                      <p class="fst-italic mb-4">"Profesionales desde el primer día. Transparencia y calidad en cada etapa del proyecto."</p>
+                      <div class="d-flex align-items-center">
+                          <img src="https://via.placeholder.com/50" alt="Cliente" class="rounded-circle me-3">
+                          <div>
+                              <h6 class="mb-0">Carlos Rojas</h6>
+                              <small class="text-muted">Gerente, Constructora XYZ</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- CTA Final -->
+<section id="contacto" class="py-5 bg-dark text-white">
+  <div class="container text-center">
+      <h2 class="fw-bold mb-4">¿Listo para Transformar tu Proyecto en Realidad?</h2>
+      <p class="lead mb-5">Contáctanos hoy mismo para una consulta gratuita.</p>
+      <div class="row justify-content-center">
+          <div class="col-md-8">
+              <div class="row g-3">
+                  <div class="col-md-4">
+                      <div class="d-flex align-items-center justify-content-center">
+                          <i class="fas fa-phone-alt me-3 text-warning"></i>
+                          <div>
+                              <h5 class="mb-0">Teléfono</h5>
+                              <p class="mb-0">+1 234 567 890</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="d-flex align-items-center justify-content-center">
+                          <i class="fas fa-envelope me-3 text-warning"></i>
+                          <div>
+                              <h5 class="mb-0">Email</h5>
+                              <p class="mb-0">info@construxyz.com</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="d-flex align-items-center justify-content-center">
+                          <i class="fas fa-map-marker-alt me-3 text-warning"></i>
+                          <div>
+                              <h5 class="mb-0">Ubicación</h5>
+                              <p class="mb-0">Ciudad, País</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
   <a href="{% url 'login' %}" class="btn btn-primary btn-lg mt-4">Iniciar Sesión</a>
 </div>

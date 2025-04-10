@@ -4,6 +4,12 @@ from django.contrib.auth.decorators import login_required, user_passes_test
 from .forms import LoginForm, CustomUserCreationForm ,PresupuestoForm, ItemFormSet
 from .models import Presupuesto
 
+
+# El footer
+def footer(request):
+    return render(request, 'footer.html')
+
+
 def user_is_ingeniero(user):
     return user.is_authenticated and user.role == 'ingeniero'
 
@@ -19,7 +25,7 @@ def login_view(request):
 
 def logout_view(request):
     logout(request)
-    return redirect('login')
+    return redirect('home')
 
 @login_required
 def home_view(request):

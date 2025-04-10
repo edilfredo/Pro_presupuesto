@@ -4,11 +4,30 @@
 {% block content %}
 <div class="text-center">
   <h2 class="mb-4">Bienvenido, {{ request.user.username }} ({{ request.user.get_role_display }})</h2>
-  <div class="d-grid gap-2 col-6 mx-auto">
+  <!-- <div class="d-grid gap-2 col-6 mx-auto">
     {% if request.user.role == 'ingeniero' %}
       <a href="{% url 'crear_usuario' %}" class="btn btn-success">Crear Usuario</a>
     {% endif %}
     <a href="{% url 'logout' %}" class="btn btn-danger">Cerrar sesión</a>
-  </div>
+  </div>>
 </div>
+-->
+<div class="text-center">
+  <h1 class="display-4 mb-4">Bienvenido a PresupuestosApp</h1>
+  <p class="lead">Automatiza la gestión de presupuestos de tu empresa de forma fácil y profesional.</p>
+
+  <div class="row mt-5">
+    <div class="col-md-4">
+      <h5>💼 Gestión de Usuarios</h5>
+      <p>Permite a tu equipo colaborar de forma organizada según su rol.</p>
+    </div>
+    <div class="col-md-4">
+      <h5>📊 Informes Inteligentes</h5>
+      <p>Accede a reportes precisos y en tiempo real para contabilidad.</p>
+    </div>
+    <div class="col-md-4">
+      <h5>⏱ Ahorro de Tiempo</h5>
+      <p>Optimiza los procesos de cotización y seguimiento presupuestario.</p>
+    </div>
+  </div>
 {% endblock %}
