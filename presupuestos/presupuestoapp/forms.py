@@ -12,14 +12,14 @@ class CustomUserCreationForm(UserCreationForm):
     class Meta:
         model = CustomUser
         fields = ['username', 'email', 'first_name','last_name','role', 'password1', 'password2']
-        labels = {
+        """labels = {
             'username': 'Nombre de usuario',
             'first_name': 'Nombre',
             'last_name': 'Apellidos',
             'email': 'Correo electrónico',
             'role': 'Rol en el sistema',
           
-        }
+        }"""
 
 
 # Formulario presupuesto
